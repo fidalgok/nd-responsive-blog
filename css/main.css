@@ -12,18 +12,54 @@ I've left some boilerplate below for you.
 
 */
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  box-sizing: border-box;
 }
 
 article {
-
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+@media screen and (min-width: 960px) {
+  article {
+    width: 960px;
+  }
+}
+h1 {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-h1 {
-
+figure {
+  margin: 2.5rem 0;
 }
 
 img {
+  max-width: 100%;
+}
 
+footer {
+  text-align: center;
+}
+
+@media screen and (min-width: 960px) {
+  footer {
+    width: 960px;
+    margin: 0 auto;
+  }
 }
